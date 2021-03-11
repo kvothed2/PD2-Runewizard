@@ -102,7 +102,10 @@ var Runewords = [
 	{ title: "Peace", runes: ['Shael','Thul','Amn'], level:"29", ttype:"Body Armor<span class=\"small\">(Amazon)</span>", tclass:"Amazon" },
 	{ title: "Principle", runes: ['Ral','Pul','Eld'], level:"45", ttype:"Body Armor<span class=\"small\">(Paladin)</span>", tclass:"Paladin" },
 	{ title: "Rain", runes: ['Ort','Mal','Ith'], level:"49", ttype:"Body Armor<span class=\"small\">(Druid)</span>", tclass:"Druid" },
-	{ title: "Treachery", runes: ['Shael','Thul','Lem'], level:"43", ttype:"Body Armor<span class=\"small\">(Assassin)</span>", tclass:"Assassin" }
+	{ title: "Treachery", runes: ['Shael','Thul','Lem'], level:"43", ttype:"Body Armor<span class=\"small\">(Assassin)</span>", tclass:"Assassin" },
+	/* PD2 added runewords */
+	{ title: "Pattern", runes: ['Tal','Ort','Tir'], level:"21", ttype:"Claws" },
+	{ title: "Plague", runes: ['Cham','Fal','Um'], level:"67", ttype:"Weapons" }
 ];
 
 var Runes = {
