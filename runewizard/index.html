@@ -1,7 +1,14 @@
----
-layout: default
-title: Runewizard for Project Diablo 2
----
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Runewizard for Project Diablo 2</title>
+	<link rel="stylesheet" type="text/css" href="css\main.css" media="all"> 
+	<link rel="Shortcut Icon" type="image/ico" href="favicon.ico">
+	<script type="text/javascript" src="js\main.js"></script>
+	<script type="text/javascript" src="js\sorttable.js"></script>
+	<script type="text/javascript" src="js\toolbox.js"></script>
+</head>
+<body>
 
 <div id="JsLayer">
 	<h3 id="JsLayerTitle">&nbsp;</h3>
@@ -9,35 +16,32 @@ title: Runewizard for Project Diablo 2
 	<div id="JsLayerContents">&nbsp;</div>
 </div>
 
+<div id="main">
+
 <div id="rwbody">
     
 	<div id="rwhead">
 		<div id="JsHelpBody" style="display:block">
-<h3>What is it?</h3>
-The Project Diablo 2 Runewizard lets you check easily what runewords you can make in Project Diablo 2, including all updated stats and requirements.<br />
-The updates will be implemented once final patch notes announced <a href="https://discord.com/channels/701658302085595158/776227839598788628">in the discord channel</a>. <br />
-Click on the runes to indicate which ones you have found. The available runewords will be highlighted automatically.<br />
-The table can be sorted, try clicking on the table headings, you may find it useful.<br />
-<br />
-<h3>Runes</h3>
-The runes are listed in order of rarity, from the most common to the most rare, from top to bottom, and left to right.<br />
-The runes upgrade formula in Project Diablo 2 has been changed to the following:
-	<ul class="ulist1">
-		<li> <strong>El - Pul:</strong> 3 runes + Key</li>
-		<li> <strong>Um - Zod:</strong> 2 runes + Key</li>
-	</ul>
-<br />
-<br />
-<h3>Note about Cookies</h3>
-This page remembers which runes you have selected by saving them in a "cookie" in your web browser. Thus, be aware that clearing/deleting cookies in your browser will reset the selected runes.<br />
-<br/>
-<h3>Credits</h3>
-This whole wizard has been adapted from <strong>Fabrice Denis</strong> one designed for Diablo 2 LoD 1.13, without him i wouldn't be able to even put this text up.<br />
-Project Diablo 2 team and SenpaiSomething for making this mod and inspiring me to do all of this. <br />
-For any issues please reach out to me on discord (KvotheD#9146).<br />
-<br />
+		<h3>What is it?</h3>
+		The Project Diablo 2 Runewizard lets you check easily what runewords you can make in Project Diablo 2, including all updated stats and requirements.<br />
+		The updates will be implemented once final patch notes announced <a href="https://discord.com/channels/701658302085595158/776227839598788628">in the discord channel</a>. <br />
+		Click on the runes to indicate which ones you have found. The available runewords will be highlighted automatically.<br />
+		The table can be sorted, try clicking on the table headings, you may find it useful.<br />
+		<h3>Runes</h3>
+		The runes are listed in order of rarity, from the most common to the most rare, from top to bottom, and left to right.<br />
+		The runes upgrade formula in Project Diablo 2 has been changed to the following:
+			<ul class="ulist1">
+				<li> <strong>El - Pul:</strong> 3 runes + Key</li>
+				<li> <strong>Um - Zod:</strong> 2 runes + Key</li>
+			</ul>
+		<h3>Note about Cookies</h3>
+		This page remembers which runes you have selected by saving them in a "cookie" in your web browser. Thus, be aware that clearing/deleting cookies in your browser will reset the selected runes.<br />
+		<h3>Credits</h3>
+		This whole wizard has been adapted from <strong>Fabrice Denis</strong> one designed for Diablo 2 LoD 1.13, without him i wouldn't be able to even put this text up.<br />
+		Project Diablo 2 team and SenpaiSomething for making this mod and inspiring me to do all of this. <br />
+		For any issues please reach out to me on discord (KvotheD#9146).<br />
 
-<a href="#" id="JsHelpClose" class="close-help">Close help</a>
+		<a href="#" id="JsHelpClose" class="close-help">Close help</a>
 		</div>
 	</div>
 
@@ -92,37 +96,36 @@ For any issues please reach out to me on discord (KvotheD#9146).<br />
 	</div>
 
 	<div class="col-pri">
-		<a href="#" id="JsHelpOpen">Help</a>
 		<h2>Runewords<span id="runewords-count"></span></h2>
-    <div class="clear"></div>
+    	<div class="clear"></div>
 
 		<table class="runewords sortable" cellspacing="0">
-		<thead>
-		<tr>
-			<th class="aleft">Runeword</th>
-			<th>Rune</th>
-			<th>Rune</th>
-			<th>Rune</th>
-			<th>Rune</th>
-			<th>Rune</th>
-			<th>Rune</th>
-			<th>Type</th>
-			<th>LVL</th>
-			<th class="cmpl">Missing Runes</th><!-- hidden column used for sorting -->
-		</tr>
-		</thead>
-		<tr style="display:none;" class="template">
-			<th>&nbsp;</th>
-			<td class="rune">&nbsp;</td>
-			<td class="rune">&nbsp;</td>
-			<td class="rune">&nbsp;</td>
-			<td class="rune">&nbsp;</td>
-			<td class="rune">&nbsp;</td>
-			<td class="rune">&nbsp;</td>
-			<td class="level">&nbsp;</td>
-			<td class="type">&nbsp;</td>
-			<td class="cmpl">&nbsp;</td>
-		</tr>
+			<thead>
+				<tr>
+					<th class="aleft">Runeword</th>
+					<th>Rune</th>
+					<th>Rune</th>
+					<th>Rune</th>
+					<th>Rune</th>
+					<th>Rune</th>
+					<th>Rune</th>
+					<th>Type</th>
+					<th>LVL</th>
+					<th class="cmpl">Missing Runes</th><!-- hidden column used for sorting -->
+				</tr>
+			</thead>
+			<tr style="display:none;" class="template">
+				<th>&nbsp;</th>
+				<td class="rune">&nbsp;</td>
+				<td class="rune">&nbsp;</td>
+				<td class="rune">&nbsp;</td>
+				<td class="rune">&nbsp;</td>
+				<td class="rune">&nbsp;</td>
+				<td class="rune">&nbsp;</td>
+				<td class="level">&nbsp;</td>
+				<td class="type">&nbsp;</td>
+				<td class="cmpl">&nbsp;</td>
+			</tr>
 		</table>
 	</div>
 
@@ -1191,4 +1194,6 @@ For any issues please reach out to me on discord (KvotheD#9146).<br />
 	50% Extra Gold From Monsters<br />
 	<i>Lesser Fade has a 30 second duration, provides +2% All Resistances and 0.5% physical damage reduction and reduces curse duration by 2.5% per level. Does NOT stack with Fade or Burst of Speed.</i>
 </div>
-
+</div>
+</body>
+</html>
